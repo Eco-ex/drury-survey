@@ -29,7 +29,7 @@ function App() {
   };
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbzSWPOnD-prKupYKE9ST1epCvo_0NejI4TZAVvCdvlooNo9rvip5LfoomzHS-5WFhdDcg/exec', requestOptions);
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzHwoUL4q4Dz0ljLBVilzKSq4r9flGqX6X6j1OlBVmimCnLwi-Fh8IuL5vwfqrBm_LuoQ/exec', requestOptions);
       const data = await response.json();
       console.log(data); // Process success response
       // Here you might set some state to indicate the form was submitted successfully or to display a message to the user

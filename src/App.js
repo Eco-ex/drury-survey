@@ -28,6 +28,11 @@ function App() {
     body: JSON.stringify({ option: selectedOption, date: currentDate }),
   };
 
+  fetch('/api/submitToSheet', requestOptions)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
     try {
       const response = await fetch('https://script.google.com/macros/s/AKfycbzHwoUL4q4Dz0ljLBVilzKSq4r9flGqX6X6j1OlBVmimCnLwi-Fh8IuL5vwfqrBm_LuoQ/exec', requestOptions);
       const data = await response.json();

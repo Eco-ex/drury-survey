@@ -23,7 +23,7 @@ function App() {
 
     const currentDate = new Date().toISOString();
     const res = await submitForm(selectedOption, currentDate);
-    console.log("Error message - john 2");
+    console.log(res);
   };
 
   const handleSpinEnd = (isWinner) => {

@@ -1,0 +1,34 @@
+/* Add this to your RouletteWheel.css */
+@keyframes spinElement {
+    from {
+      transform-origin: center;
+      transform: rotate(0deg);
+    }
+    to {
+      transform-origin: center;
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinAnimation {
+    animation: spinElement 3s linear;
+  }
+  
+.wheel {
+    display: flex;
+    justify-content: center;
+}
+
+.spin-button {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    min-height: 50px;
+    width: 70%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+  }

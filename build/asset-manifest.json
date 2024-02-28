@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c7b1417c.css",
+    "main.js": "/static/js/main.5287389f.js",
+    "static/media/roulette-svgrepo-com.svg": "/static/media/roulette-svgrepo-com.ab30f1ce1b812bdb15209445daeec143.svg",
+    "index.html": "/index.html",
+    "main.c7b1417c.css.map": "/static/css/main.c7b1417c.css.map",
+    "main.5287389f.js.map": "/static/js/main.5287389f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7b1417c.css",
+    "static/js/main.5287389f.js"
+  ]
+}

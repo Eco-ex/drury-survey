@@ -3,6 +3,7 @@ import './App.css';
 import RadioForm from './RadioForm';
 import RouletteWheel from './RouletteWheel';
 import './index.css';
+import submitForm from './api/submitForm';
 
 function App() {
   const [showForm, setShowForm] = useState(true);
@@ -21,27 +22,8 @@ function App() {
     const selectedOption = formData.get('option'); // Assuming 'option' is the name of your radio inputs
 
     const currentDate = new Date().toISOString();
-
-    const requestOptions = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ option: selectedOption, date: currentDate }),
-  };
-
-  fetch('/api/submitToSheet', requestOptions)
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-
-    try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbzHwoUL4q4Dz0ljLBVilzKSq4r9flGqX6X6j1OlBVmimCnLwi-Fh8IuL5vwfqrBm_LuoQ/exec', requestOptions);
-      const data = await response.json();
-      console.log(data); // Process success response
-      // Here you might set some state to indicate the form was submitted successfully or to display a message to the user
-    } catch (error) {
-      console.error('Error:', error);
-      // Handle the error case
-    }
+    const res = await submitForm(selectedOption, currentDate);
+    console.log("Error message - john 2");
   };
 
   const handleSpinEnd = (isWinner) => {
@@ -65,8 +47,8 @@ function App() {
         <div className='review-content'>
           <p>{resultMessage}</p>
           <p>Thank you so much for completing our survey. If you have time, please also leave us a review!</p>
-          <a className='reviews' href="http://example.com/link1" target="_blank" rel="noopener noreferrer"><button className='review-button'>Trip Advisor</button></a>
-          <a className='reviews' href="http://example.com/link2" target="_blank" rel="noopener noreferrer"><button className='review-button'>Google Review</button></a>
+          <a className='reviews' href="http://example.com/link1" rel="noopener noreferrer"><button className='review-button'>Trip Advisor</button></a>
+          <a className='reviews' href="http://example.com/link2" rel="noopener noreferrer"><button className='review-button'>Google Review</button></a>
         </div>
       )}
     </div>

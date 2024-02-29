@@ -64,14 +64,14 @@ function App() {
           </p>
           <a
             className="reviews"
-            href="http://example.com/link1"
+            href="https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d26262204-Reviews-Drury_N4-London_England.html"
             rel="noopener noreferrer"
           >
             <button className="review-button">Trip Advisor</button>
           </a>
           <a
             className="reviews"
-            href="http://example.com/link2"
+            href="https://g.page/r/Cdw2VYHqWk0lEBM/review"
             rel="noopener noreferrer"
           >
             <button className="review-button">Google Review</button>

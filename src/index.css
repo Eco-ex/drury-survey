@@ -32,7 +32,7 @@ span{
   font-size: 36px;
 }
 
-p {
+p, button {
   text-align: center;
   font-size: 18px;
 }

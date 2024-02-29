@@ -93,34 +93,10 @@ label:hover {
   text-align: center;
   width: 100%;
   font-weight: bold;
+  color: #000;
 }
 
-/* Add this to your App.css or a specific CSS module for ChoicesTable */
-
-table {
-  width: 100%; /* Full width */
-  border-collapse: collapse; /* Collapse borders */
-  margin-top: 20px; /* Add some space above the table */
-}
-
-table, th, td {
-  border: 1px solid #ddd; /* Light grey border */
-}
-
-th, td {
-  text-align: left; /* Align text to the left */
-  padding: 8px; /* Add padding */
-}
-
-th {
-  background-color: #04AA6D; /* Darker background for headers */
-  color: white; /* White text for headers */
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2; /* Zebra striping for rows */
-}
-
-tr:hover {
-  background-color: #ddd; /* Highlight on hover */
+.review-button:hover {
+  color: white;
+  background-color: #007bff;
 }
